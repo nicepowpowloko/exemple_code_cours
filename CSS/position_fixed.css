@@ -1,0 +1,27 @@
+body,div,p{
+    margin: 0px;
+  }
+  p{
+    text-align: justify;
+    font-family: 'AR One Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+  }
+  .carre{
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+  }
+  .bleu{
+    background-color: #0AF;
+  }
+  .vert{
+    background-color: rgb(180, 244, 2);
+  }
+  .fixed{
+    position: fixed;
+  }
+  .droite{
+    right: 0px;
+  }
+

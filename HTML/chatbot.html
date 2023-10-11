@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .chat {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .user-input {
+            display: flex;
+        }
+        .user-input input[type="text"] {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .user-input button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat" id="chat-box"></div>
+        <div class="user-input">
+            <input type="text" id="user-message" placeholder="Tapez un message...">
+            <button onclick="envoyerMessage()">Envoyer</button>
+        </div>
+    </div>
+
+    <script>
+        function envoyerMessage() {
+            const messageUtilisateur = document.getElementById("user-message").value;
+            const boiteChat = document.getElementById("chat-box");
+            
+            // Afficher le message de l'utilisateur
+            boiteChat.innerHTML += `<div><strong>Vous :</strong> ${messageUtilisateur}</div>`;
+
+            // Simuler une réponse du chatbot
+            setTimeout(function() {
+                const reponseChatbot = "aujourdhui il fera 30 degrés ?.";
+                boiteChat.innerHTML += `<div><strong>Chatbot :</strong> ${reponseChatbot}</div>`;
+                // Faire défiler vers le bas de la fenêtre de chat
+                boiteChat.scrollTop = boiteChat.scrollHeight;
+            }, 1000);
+
+            // Effacer le champ de saisie de l'utilisateur
+            document.getElementById("user-message").value = "";
+        }
+    </script>
+</body>
+</html>

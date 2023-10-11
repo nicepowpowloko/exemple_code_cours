@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menu_deroulant.css">
+    <title>Menu déroulant</title>
+</head>
+<body>
+    
+<h1>Menu déroulant sticky HTML et CSS</h1>
+
+<br>
+
+<!-- Je commence la structure de ma bar de Nav -->
+
+<nav>
+  <ul>
+    <li class="deroulant"><a href="#">Exemple1 &ensp;</a>
+
+<!-- Je commence avec mes premiers onglets et ensuite j'imbrique mes sous menu -->
+
+      <ul class="sous">
+
+<!-- Je créer mes sous menu en commencant par ul et j'incorpore mes li -->
+
+        <li><a href="#">ss-menu</a></li>  <!-- J'ajoute ici un a pour l'utilisation de lien dans mes li -->
+        <li><a href="#">ss-menu</a></li>
+        <li><a href="#">ss-menu</a></li>
+      </ul>
+    </li>
+
+    <li class="deroulant"><a href="#">Exemple2 &ensp;</a>
+      <ul class="sous">
+        <li><a href="#">ss-menu</a></li>
+        <li><a href="#">ss-menu</a></li>
+        <li><a href="#">ss-menu</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">A propos</a></li>
+  </ul>
+</nav>
+
+<!-- Je n'oublie pas de refermer ma nav -->
+
+
+<div class="conteneur">
+  <p>Du contenu sous le menu</p>
+</div>
+
+</body>
