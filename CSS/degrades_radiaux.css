@@ -1,0 +1,27 @@
+
+
+div{
+    width: 80%;
+    height: 120px;
+    border: 2px solid #333;
+    margin: 10px auto;
+}
+
+.ex1{
+    background:radial-gradient(yellow, green, purple);
+}
+.ex2{
+    background:radial-gradient(circle, yellow, rgb(1, 14, 1), rgb(41, 3, 233));
+}
+.ex3{
+    background:radial-gradient(rgb(32, 3, 195) 40%, rgb(232, 115, 5) 60%, purple);
+}
+.ex4{
+    background:radial-gradient(at top, rgb(54, 54, 51), rgb(3, 174, 52), rgb(146, 15, 57));
+}
+.ex5{
+    background:radial-gradient(at 20% 80%, yellow, green, purple);
+}
+.ex6{
+    background:radial-gradient(closest-side, rgb(66, 171, 10), rgb(28, 15, 92), rgb(223, 63, 124));
+}

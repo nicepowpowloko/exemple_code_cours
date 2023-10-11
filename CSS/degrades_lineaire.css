@@ -1,0 +1,24 @@
+
+
+div{
+    width: 90%;
+    height: 100px;
+    border: 2px solid #333;
+    margin: 10px auto;
+}
+
+.ex1{
+    background:linear-gradient(yellow,red);
+}
+.ex2{
+    background:linear-gradient(to bottom, rgb(161, 7, 237),rgb(5, 230, 5));
+}
+.ex3{
+    background:linear-gradient(180deg, rgb(20, 20, 19),red);
+}
+.ex4{
+    background:linear-gradient(to bottom, yellow 0%,rgb(241, 7, 171) 100%);
+}
+.ex5{
+    background:linear-gradient(to top, rgb(75, 73, 73), rgb(4, 226, 234));
+}
