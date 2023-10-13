@@ -1,0 +1,39 @@
+
+body{
+    background-color: black;
+    border-top: 5px solid white;
+    
+}
+
+
+.d1{
+    width: 576px;
+    height: 432px;
+    margin: 50px auto;
+    box-shadow: 10px 15px 10px -5px #777;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.conteneur{
+    max-width: 576px;
+    margin: 50px auto;
+}
+
+.d1:hover{
+    animation-play-state: paused;
+}
+@keyframes fondu{
+    0%{
+        background-image: url("../IMG/jordan_brave.jpg");
+    }
+    33.33%{
+        background-image: url("../IMG/nike_custom.webp");
+    }
+    66.67%{
+        background-image: url("../IMG/nike_custom2.png");
+    }
+    100%{
+        background-image: url("../IMG/nike_custom3.jpg");
+    }
+}

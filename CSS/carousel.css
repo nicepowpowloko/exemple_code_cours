@@ -1,0 +1,37 @@
+.gallery{
+    width: 35rem; /* La taille pour l'élément racine. */
+    height: 22rem;
+    position: relative;
+    display: flex;
+    overflow: auto;  /* La propriété CSS overflow est une propriété raccourcie qui définit comment gérer le dépassement du contenu d'un élément dans son bloc. Elle définit les valeurs des propriétés overflow-x et overflow-y. */
+    scroll-snap-type: x mandatory; /* Le viewport visuel du conteneur doit s'arrêter sur les points d'accroche s'il n'est pas en cours de défilement. Cela signifie qu'il accroche sur ce point quand le défilement s'arrête.  */
+    box-shadow: 5px 5px 5px rgb(164, 3, 189);
+    animation-name: thomas ; /* nom de l'animation du KeyFrame */
+    animation-duration: 2s; /* durée de l'animation */
+    animation-iteration-count: infinite;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;  /* La propriété CSS object-fit définit la façon dont le contenu d'un élément remplacé (<img> ou <video> par exemple) doit s'adapter à son conteneur en utilisant sa largeur et sa hauteur.
+    Selon la valeur utilisée pour object-fit, l'élément peut être rogné, mis à l'échelle ou étiré, afin de remplir la boîte qui le contient. */
+
+    scroll-snap-align: start; /* La propriété scroll-snap-align définit la position de la boîte d'accroche (snap positions) comme un alignement entre la zone d'accroche et le conteneur (la boîte de défilement de l'élément). 
+    Le point d'alignement situé au début de l'axe et sur le bord de la boîte de défilement est une position d'accroche sur cet axe. */
+}
+
+@keyframes thomas {
+    0%{
+        box-shadow: red 5px 5px 5px;
+        background-color:black ;
+    }
+
+    50%{
+        box-shadow: 5px 5px 5px yellow;
+        background-color:rgb(218, 3, 3);
+    }
+}

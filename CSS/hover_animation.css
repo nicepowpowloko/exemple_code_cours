@@ -1,0 +1,21 @@
+.btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid black;
+    transition: .5s ease;
+    width: 50px;
+}
+
+.btn:hover,:focus{
+    background: #00a1ff;
+    border: 1px solid #00a1ff;
+    text-shadow: 0 0 5px #ffffff,
+                 0 0 10px  #ffffff,
+                 0 0 20px #ffffff;
+    box-shadow:  0 0 5px #00a1ff
+                 0 0 20px #00a1ff
+                 0 0 50px #00a1ff
+                 0 0 100px #00a1ff;
+    pointer-events:visibleStroke;
+}
