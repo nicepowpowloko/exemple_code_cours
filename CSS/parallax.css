@@ -1,0 +1,17 @@
+ /* debut parallax */
+ .parallax2 {
+    background-image: url("../IMG/nike_1_low.brooklyn.jpeg");
+  }
+  .section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* fin de  parallax */
