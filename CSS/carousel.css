@@ -28,10 +28,10 @@
     0%{
         box-shadow: red 5px 5px 5px;
         background-color:black ;
-    }
+    }  /* Ceci est la première étape de l'animation, qui est définie à 0% de progression. À cet instant, l'élément a un certain style. */
 
     50%{
         box-shadow: 5px 5px 5px yellow;
         background-color:rgb(218, 3, 3);
-    }
+    }  /*  */
 }

@@ -20,12 +20,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s;
+    cursor: pointer; /* Cela définit l'apparence du curseur lorsque vous survolez l'élément "menu-button". Il change le curseur en une main pointer, indiquant qu'il est cliquable. */
+
+    transition: transform 0.3s; /*Cela indique que toute transition de transformation appliquée à l'élément, telle que le changement de l'échelle (scale) lors du survol, durera 0,3 secondes, créant ainsi une animation fluide.*/
 }
 
 .menu-button.active {
-    transform: rotate(45deg);
+    transform: rotate(45deg); /*Cela définit une transformation sur l'élément. En l'occurrence, il fait tourner l'élément de 45 degrés dans le sens des aiguilles d'une montre lorsqu'il a la classe "active". Cette transformation applique une rotation à l'élément autour de son point d'origine (coin supérieur gauche, par défaut) de 45 degrés.*/
 }
 
 .menu-items {
@@ -44,9 +45,11 @@ body {
 }
 
 .menu-items.active {
-    transform: scale(1);
-    opacity: 1;
+    transform: scale(1); /*  La propriété transform est utilisée pour appliquer des transformations 2D ou 3D à un élément HTML. Dans ce cas, scale(1) signifie que l'élément n'est pas mis à l'échelle. Un facteur d'échelle de 1 signifie que l'élément conserve sa taille d'origine, sans agrandissement ou rétrécissement. */
+    opacity: 1; 
 }
+/* En résumé, lorsque la classe "active" est ajoutée à un élément avec la classe "menu-items", il est mis à l'échelle à sa taille d'origine (1x) et devient complètement opaque (entièrement visible). */
+
 
 .menu-items li {
     text-align: center;
