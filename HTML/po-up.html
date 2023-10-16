@@ -51,7 +51,7 @@
         }
     </style>
 
-    
+
 </head>
 <body>
     <button class="open-popup-button">Ouvrir la Pop-up</button>
@@ -77,6 +77,19 @@
         closeButton.addEventListener("click", () => {
             overlay.style.display = "none";
         });
+
+/*     const openButton = document.querySelector(".open-popup-button");: Cette ligne de code sélectionne le premier élément HTML qui a la classe "open-popup-button" en utilisant la méthode document.querySelector(). Cela suppose qu'il y a un bouton ou un élément avec cette classe dans votre page web.
+
+    const overlay = document.getElementById("overlay");: Cette ligne de code sélectionne l'élément HTML avec l'ID "overlay" en utilisant la méthode document.getElementById(). Cet élément représente généralement la couche de fond de la pop-up qui s'affiche en arrière-plan et qui devient opaque lorsque la pop-up est ouverte.
+
+    const closeButton = document.getElementById("close-button");: Cette ligne de code sélectionne l'élément HTML avec l'ID "close-button". Cet élément représente généralement un bouton ou une icône de fermeture dans la pop-up qui permet de la fermer.
+
+    openButton.addEventListener("click", () => { overlay.style.display = "flex"; });: Cette partie du code ajoute un écouteur d'événements ("event listener") au bouton représenté par openButton. Lorsque ce bouton est cliqué, la fonction fléchée (fonction anonyme) est exécutée. Cette fonction change la valeur de la propriété display de l'élément overlay en "flex", ce qui le rend visible en tant que couche d'arrière-plan opaque. Cela affiche la pop-up.
+
+    closeButton.addEventListener("click", () => { overlay.style.display = "none"; });: Cette partie du code ajoute un écouteur d'événements à l'élément représenté par closeButton. Lorsque cet élément est cliqué (généralement un bouton de fermeture dans la pop-up), la fonction fléchée est exécutée. Cette fonction change la valeur de la propriété display de l'élément overlay en "none", ce qui masque la pop-up en rendant la couche de fond invisible. */
+
+
+
     </script>
 </body>
 </html>
