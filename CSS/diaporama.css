@@ -13,7 +13,7 @@ body{
     box-shadow: 10px 15px 10px -5px #777;
     background-color: #EDEDED;
     background-size: contain;
-    animation: fondu 15s ease-in-out infinite both;
+    animation: fondu 3s ease-in-out infinite both;
 }
 .conteneur{
     max-width: 576px;
