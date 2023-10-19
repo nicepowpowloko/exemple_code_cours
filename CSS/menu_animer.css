@@ -1,3 +1,10 @@
+@font-face {
+    font-family: OptimusPrinceps;
+    src: url(/optimusprinceps/OptimusPrinceps.ttf;);
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -60,7 +67,7 @@ body {
     text-decoration: none;
     color: #fff;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: 'OptimusPrinceps';
 }
 
 
