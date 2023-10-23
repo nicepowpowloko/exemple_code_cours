@@ -1,0 +1,81 @@
+:root{
+    --main-color:#fff;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family:'Roboto' , 'sans-serif';
+    overflow:hidden;
+  }
+  
+  .main-header{
+    background: #4FB391;
+    width: 100%;
+    height:50px;
+  }
+  
+  nav{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 200px;
+    top:50px;
+    height:calc(100vh - 50px);
+    background:#2D6653;
+    transform:translateX(-100%);
+    transition:.4s ease;
+  }
+  
+  .navigation li{
+    list-style:none;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+  }
+  
+  .navigation a{
+    color:var(--main-color);
+    display: block;
+    line-height:3.5;
+    padding: 0 10px;
+    text-decoration:none;
+    transition:.4s ease;
+  }
+  
+  .navigation a:hover{
+    transform:translateX(10%);
+  }
+  
+  #btn-nav{
+    display: none;
+  }
+  /*C'est un élément de case à cocher (checkbox) qui n'est pas affiché (display: none;).*/
+  
+  #btn-nav:checked ~ nav{
+    transform:translateX(0);
+  }
+  /*Cela signifie que lorsque la case à cocher #btn-nav est cochée (sélectionnée), les styles de la balise nav immédiatement après la case à cocher sont modifiés. Cela permet de faire basculer l'affichage de la navigation en la faisant glisser depuis la gauche lorsqu'on coche la case à cocher.*/
+  
+  .btn-nav{
+    color:var(--main-color);
+    font-size:30px;
+    position: absolute;
+    left:0;
+    top:0;
+    cursor:pointer;
+    padding:6.5px 15px;
+    transition:.2s ease;
+    background:rgba(0,0,0,.1);
+  }
+
+/* Il définit les styles d'un bouton pour ouvrir la navigation. Il est initialement caché (display: none;), mais il peut être activé via la case à cocher #btn-nav. Il est positionné en haut à gauche de la page, a une couleur de texte définie par --main-color, et il change de couleur d'arrière-plan lorsqu'il est survolé.*/
+
+
+  
+  .btn-nav:hover{
+    background:rgba(0,0,0,.3);
+  }
