@@ -42,3 +42,12 @@ input[type="submit"]:hover{
     background-color: greenyellow;
     cursor: pointer;
 }
+
+
+
+body{
+    position: absolute;
+    width: 2472px;
+    height: 1010px;
+    background: url(croatie-lacs-plitvice-cascades-7.jpg);
+  }

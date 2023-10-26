@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* La première partie du code est une réinitialisation des styles pour tous les éléments HTML (*), ainsi que pour les pseudo-éléments ::after et ::before. Cela garantit que la marge (margin) et le rembourrage (padding) sont nuls pour tous les éléments, et que la boîte de modèle (box-sizing) est définie sur "border-box". Cette réinitialisation est courante pour assurer une base cohérente pour les styles dans un projet. */
+
+
+
+body {
+    background-color: rgb(235, 10, 247);
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 3rem;
+    padding: 3rem;
+    height: 600px;
+    text-align: center;
+ 
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
+
+.menu-items {
+    text-align: center;
+    position: absolute;
+    padding: 5rem;
+    margin-top: -6rem;
+    margin-left: -1rem;
+    top: 13rem;
+    left: 7.5rem;
+    list-style: none;
+    opacity: 0;
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+/* La classe .menu-items est utilisée pour styliser un menu de navigation. Il est positionné en absolu (position: absolute) et placé en haut à gauche du conteneur à l'aide de marges négatives (margin-top et margin-left). La propriété opacity est réglée à 0, ce qui signifie que le menu est initialement invisible. Le menu a un fond noir, une bordure noire, une bordure arrondie et est décalé horizontalement hors de l'écran avec transform: translateX(-10%). Les transitions sont utilisées pour animer le menu lorsqu'il devient visible. */
+
+
+
+
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items li a:hover{
+    color: rgb(174, 174, 174);
+}
+
+
+/* Les éléments de liste (li) à l'intérieur du menu ont une couleur de texte blanche et un peu de remplissage (padding) et sont stylisés pour ne pas afficher les puces de liste (list-style: none). */
+
+
+
+.check {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* La classe .check est utilisée pour styliser une case à cocher, mais elle est initialement invisible (opacity: 0). Cette case à cocher est destinée à activer ou désactiver l'affichage du menu.
+
+Lorsque la case à cocher est survolée, le curseur de la souris change pour indiquer que l'action est cliquable (cursor: pointer).
+
+Lorsque la case à cocher est cochée (activée), les règles CSS suivantes s'appliquent : le menu de navigation (.menu-items) est affiché (display: block), il est déplacé horizontalement pour être entièrement visible (transform: translateX(0%)), et son opacité est réglée à 1 pour le rendre visible. */
+
+
+.ham-menu {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    padding: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 0.25em;
+}
+
+/* La classe .ham-menu est utilisée pour styliser l'icône du menu hamburger. Il s'agit d'un élément avec trois lignes horizontales empilées verticalement. L'icône est positionnée en absolu à un emplacement spécifique. */
+
+
+
+.ham-menu .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+.ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+    opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+/* Chacune des trois lignes du menu hamburger est stylisée comme des éléments séparés (.line1, .line2, .line3) et a une couleur de fond blanche. Deux des lignes subissent une transformation lorsqu'elles sont cochées pour former une icône de fermeture. */
