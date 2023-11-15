@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+
+#progress1 {
+  background: #3ea7b5;
+  display: block;
+  height: 20px;
+  margin: 0 0 10px;
+  position: relative;
+  width: 300px;
+ 
+}
+
+.progress.complete {
+    transition: 3s width linear;
+    width: 100%;
+    
+  }
+
+.progress {
+    background: #cc5201;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+
+a,
+button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10px 15px;
+}
+
+a {
+  color: #111211;
+}
+
+button {
+  background: #cc5201;
+  border: 0;
+  color: white;
+}
+
+</style>
+
+<img src="../IMG/gif.gif" width="100px" height="100px"  alt="">
+<div id="progress1">
+  <div class="progress"></div>
+</div>
+<button onclick="startProgress1()">démarrer</button>
+<a onclick="resetProgress1()">Reset</a>
+
+
+<script>
+
+const progress1 = document.querySelector('#progress1 .progress');
+
+
+
+startProgress1 = () => {
+  let progress = 0;           
+  
+  const interval = setInterval(
+    () => {
+      progress++;
+      
+      progress1.style.width = `${progress}%`;
+      
+      if (progress >= 100) {
+        clearInterval(interval);
+      }
+    },
+    30
+  );
+};
+
+resetProgress1 = () => {
+  progress1.style.width = 0;
+};
+
+
+
+
+</script>
+
+</body>
+</html>

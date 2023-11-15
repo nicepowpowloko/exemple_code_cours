@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtion2</title>
+</head>
+<body>
+    
+<script>
+
+// function avec argument
+
+    function conversion(taux) // déclaration de la fonction avec un argument
+{
+var valeur = prompt("Entrez la valeur à convertir");
+var resultat = valeur * taux; // on calcule le résultat, en utilisant l'argument
+
+alert('Valeur : '+valeur + '\nRésultat : '+resultat);
+}
+
+// function avec plusieurs arguments
+
+function conversion2(unite1, taux2, unite2)
+{
+var valeur2 = prompt("Entrez la valeur à convertir, en " + unite1);
+var resultat2 = valeur2 * taux2;
+alert(valeur2 + ' ' + unite1 + '\n' + resultat2 + ' ' + unite2);
+}
+
+</script>
+
+<!-- function à un argument-->
+
+<p> <img src="../IMG/convertiseur.png" alt="" onclick="conversion(6.55957)" /> </p>
+
+<p> <a href="#" onclick="conversion(100)">Conversion mètres &gt; centimètres</a> </p>
+
+
+<!-- function à deux argument-->
+<p>
+    <img src="../IMG/skate.jpg" width="200px" height="200px" alt="" onclick="conversion2('Euros', 6.55957,
+    'Frs')" /> <br />
+    <a href="#" onclick="conversion2('m',100,
+    'cm')">Conversion mètres &gt; centimètres</a>
+</p>
+
+</body>
+</html>
