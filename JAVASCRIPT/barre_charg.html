@@ -59,26 +59,39 @@ button {
   <div class="progress"></div>
 </div>
 <button onclick="startProgress1()">démarrer</button>
+    <!--     Une balise <button> est utilisée pour créer un bouton avec le texte "démarrer".
+    L'attribut onclick est utilisé pour spécifier une fonction JavaScript (startProgress1()) qui sera exécutée lorsque le bouton est cliqué. -->
+
 <a onclick="resetProgress1()">Reset</a>
+      <!--     Une balise <a> (lien) est utilisée pour créer un lien avec le texte "Reset".
+    L'attribut onclick est utilisé pour spécifier une fonction JavaScript (resetProgress1()) qui sera exécutée lorsque le lien est cliqué. -->
+
 
 
 <script>
 
 const progress1 = document.querySelector('#progress1 .progress');
-
+  //Cette ligne de code utilise document.querySelector pour sélectionner l'élément avec l'id progress1 qui a une classe progress. Cet élément est probablement une barre de progression visuelle.
 
 
 startProgress1 = () => {
+  //La fonction startProgress1 initialise une variable progress à zéro.
+
   let progress = 0;           
   
   const interval = setInterval(
     () => {
       progress++;
       
+      //    Elle utilise setInterval pour exécuter une fonction toutes les 30 millisecondes. À chaque itération, la variable progress est incrémentée et la largeur de la barre de progression (progress1.style.width) est mise à jour en fonction de la progression actuelle.
+  
+
       progress1.style.width = `${progress}%`;
       
       if (progress >= 100) {
         clearInterval(interval);
+        // Si la progression atteint ou dépasse 100%, l'intervalle est effacé en utilisant clearInterval, arrêtant ainsi la progression.
+
       }
     },
     30
@@ -88,6 +101,13 @@ startProgress1 = () => {
 resetProgress1 = () => {
   progress1.style.width = 0;
 };
+//La fonction resetProgress1 réinitialise la largeur de la barre de progression à zéro, ce qui a pour effet de réinitialiser visuellement la progression.
+
+//En résumé, ce code crée une barre de progression visuelle et offre deux fonctions pour contrôler son état : startProgress1 pour démarrer la progression, et resetProgress1 pour la réinitialiser. Les valeurs spécifiques telles que la durée entre chaque itération (30 millisecondes) et le critère d'achèvement (progress >= 100) peuvent être ajustées en fonction des besoins spécifiques de l'application.
+
+
+
+
 
 
 

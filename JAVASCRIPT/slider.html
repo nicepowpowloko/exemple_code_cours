@@ -120,16 +120,27 @@ body {
 
 <script>
            let imgContainer = document.querySelector(".img-container");
+
+           //Cette ligne de code utilise document.querySelector pour sélectionner l'élément avec la classe CSS .img-container. Cet élément est le conteneur des images qui seront animées.
  
  setInterval(() => {
+    //La fonction setInterval est utilisée pour exécuter une fonction de manière répétée à intervalles réguliers. Dans ce cas, la fonction est exécutée toutes les 2500 millisecondes (2,5 secondes).
          let last = imgContainer.firstElementChild;
+         //À chaque itération de l'intervalle, la première image (firstElementChild) du conteneur (imgContainer) est extraite avec last = imgContainer.firstElementChild.
          last.remove();
+         //Ensuite, la fonction remove() est utilisée pour retirer cette première image du DOM.
          imgContainer.appendChild(last);
+         //Enfin, la première image retirée est ajoutée à la fin du conteneur avec imgContainer.appendChild(last). Cela a pour effet de déplacer la première image à la fin, créant ainsi une rotation circulaire des images dans le conteneur.
        }, 2500);
+
+       //En résumé, ce code crée une animation de rotation d'images dans un conteneur en déplaçant périodiquement la première image du début à la fin du conteneur. Cette rotation continue toutes les 2,5 secondes (2500 millisecondes), créant un effet de diaporama circulaire si plusieurs images sont présentes dans le conteneur.
 
 
        
 </script>
+
+
+
 
 
 </body>

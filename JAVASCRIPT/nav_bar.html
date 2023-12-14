@@ -99,7 +99,12 @@
     const menuItems = document.querySelectorAll('.tab-button');
 const indicator = document.querySelector('.indicator');
 
+//  menuItems: Sélectionne tous les éléments avec la classe .tab-button. Ces éléments représentent les onglets de la barre de navigation.
+// indicator: Sélectionne l'élément avec la classe .indicator, qui est l'indicateur visuel qui suit l'onglet actif.
+
 let activeItemIndex = 0;
+
+//activeItemIndex: C'est une variable qui garde la trace de l'index de l'onglet actif. Initialement, l'onglet actif est défini sur 0.
 
 function updateIndicator(index) {
   const activeItem = menuItems[index];
@@ -115,6 +120,10 @@ function updateIndicator(index) {
   indicator.style.transform = `translateX(${indicatorLeft}px)`;
 }
 
+// Cette fonction met à jour la position de l'indicateur en fonction de l'index de l'onglet actif.
+// Elle utilise les méthodes getBoundingClientRect() pour obtenir les dimensions et les positions des éléments et ajuste la position de l'indicateur en conséquence.
+
+
 menuItems.forEach((item, index) => {
   item.addEventListener('click', () => {
     if (activeItemIndex !== index) {
@@ -126,7 +135,16 @@ menuItems.forEach((item, index) => {
   });
 });
 
+// Ce bloc de code ajoute des écouteurs d'événements pour chaque bouton (onglet) de la barre de navigation.
+// Lorsqu'un bouton est cliqué, il vérifie si l'index du bouton cliqué est différent de l'index de l'onglet actif.
+  //  Si c'est le cas, il supprime la classe active de l'onglet actif, ajoute la classe active à l'onglet cliqué, met à jour l'index de l'onglet actif, et appelle la fonction updateIndicator pour ajuster la position de l'indicateur.
+
 updateIndicator(activeItemIndex);
+
+//Cette ligne appelle initialement la fonction updateIndicator avec l'index de l'onglet actif pour positionner correctement l'indicateur lors du chargement initial de la page.
+
+
+// En résumé, ce code JavaScript gère la logique interactive de la barre de navigation. Il suit l'onglet actif, ajoute et supprime des classes pour refléter visuellement l'état actif, et ajuste l'indicateur en conséquence.
 
 </script>
 
