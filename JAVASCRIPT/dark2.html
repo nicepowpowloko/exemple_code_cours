@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark_2</title>
+  <style>
+    body {
+      transition: background-color 0.5s, color 0.5s;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .toggle-button {
+      font-size: 16px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    /* Couleurs pour le mode jour */
+    .day-mode {
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Couleurs pour le mode nuit */
+    .night-mode {
+      background-color: #0b0b0b;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="day-mode">
+
+<button class="toggle-button" onclick="toggleMode()">  🏈  </button>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure voluptatum et molestiae facilis, blanditiis iusto doloremque cumque libero explicabo veniam odit, officiis quidem corporis commodi, dolorem optio nulla reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quas, consequatur provident esse, laudantium similique inventore saepe, assumenda fugit consequuntur illo possimus. Fugiat magni ratione optio dolore, quo fuga atque.</p>
+
+<br>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure voluptatum et molestiae facilis, blanditiis iusto doloremque cumque libero explicabo veniam odit, officiis quidem corporis commodi, dolorem optio nulla reiciendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quas, consequatur provident esse, laudantium similique inventore saepe, assumenda fugit consequuntur illo possimus. Fugiat magni ratione optio dolore, quo fuga atque.
+</p>
+
+<br>
+
+<img src="../IMG/gif.gif" alt="">
+
+<script>
+  // Fonction pour basculer entre le mode nuit et le mode jour
+  function toggleMode() {
+    const body = document.body;
+    body.classList.toggle('night-mode');
+  }
+</script>
+
+
+</body>
+</html>
