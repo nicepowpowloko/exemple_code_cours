@@ -41,17 +41,20 @@
 <form id="myForm">
   <label for="category">Catégorie :</label>
   <select id="category" name="category">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
+    <option value="option1"></option>
+    <option value="Transport de passagers">Transport de passagers</option>
+    <option value="Transport mobilité réduite">Transport mobilité réduite</option>
+    <option value="Portage de repas">Portage de repas</option>
+    <option value="Aide à domicile">Aide à domicile</option>
+    <option value="Alpha bien-etre">Alpha bien-etre</option>
     <!-- Ajoutez d'autres options au besoin -->
   </select>
 
-  <label for="firstName">Prénom :</label>
-  <input type="text" id="firstName" name="firstName" required>
-
   <label for="lastName">Nom :</label>
   <input type="text" id="lastName" name="lastName" required>
+
+  <label for="firstName">Prénom :</label>
+  <input type="text" id="firstName" name="firstName" required>
 
   <label for="email">Email :</label>
   <input type="email" id="email" name="email" required>
@@ -59,7 +62,11 @@
   <label for="phone">Téléphone :</label>
   <input type="tel" id="phone" name="phone">
 
+  <label for="comment">Commentaire :</label>
+  <textarea id="comment" name="comment" rows="4"></textarea>
+
   <button type="button" onclick="submitForm()">Envoyer</button>
+
 </form>
 
 <script>
@@ -70,6 +77,7 @@ function submitForm() {
   var lastName = document.getElementById('lastName').value;
   var email = document.getElementById('email').value;
   var phone = document.getElementById('phone').value;
+  var comment = document.getElementById('comment').value;
 
   // Afficher les données dans la console (vous pouvez ajuster cela selon vos besoins)
   console.log('Catégorie:', category);
@@ -77,6 +85,25 @@ function submitForm() {
   console.log('Nom:', lastName);
   console.log('Email:', email);
   console.log('Téléphone:', phone);
+
+ // Construction de l'URL de l'e-mail
+ var mailtoLink = 'mailto:thomas22751@gmail.com' +
+    '?subject=' + encodeURIComponent('Nouveau formulaire de contact') +
+    '&body=' + encodeURIComponent('Catégorie: ' + category + '\n' +
+                                  'Prénom: ' + firstName + '\n' +
+                                  'Nom: ' + lastName + '\n' +
+                                  'Email: ' + email + '\n' +
+                                  'Téléphone: ' + phone + '\n' +
+                                  'Commentaire: ' + comment);
+
+  // Ouvrir le client de messagerie par défaut avec le lien mailto
+  window.location.href = mailtoLink;
+
+
+
+
+
+
 }
 </script>
 
