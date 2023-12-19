@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body
+{
+    background-color: #FAD8A7;
+    margin: 0;
+    box-sizing:border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* .sticky
+{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+} */
+.backtotop {
+    width: 75px;
+    height: 129px;
+    background: url("images/backtotop-1-removebg.png") right no-repeat;
+    display: inline-block;
+    position: fixed;
+    margin-left: 10px;
+    margin-top:275px;
+}
+
+.backtotop:hover {
+    background: url("images/backtotop-hover-removebg.png") no-repeat;
+}
+.parent-1
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.header-1
+{ 
+    display: flex;
+align-items: center;
+justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    border-bottom: 7px solid #96A702;
+    grid-area: 1 / 1 / 2 / 6; 
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+}
+.header-1 p
+{
+    font-family: 'Bebas Neue', cursive;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 1px;
+color: #FFFFFF;
+}
+.carte a
+{
+    text-decoration: none;
+}
+.bestiaire a
+{
+    text-decoration: none;
+}
+.classe a
+{
+    text-decoration: none;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20vh;
+    background-color: #000000;
+}
+/* nav {
+    text-align: center;
+    
+  
+  } */
+  .deroulant {
+    display: inline-block;
+  }
+  .deroulant > li {
+    float: left;
+    /* width: 125px; */
+    height: 20px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+  }
+  /* .deroulant > li:hover
+  {
+    color: #000000;
+  } */
+  .sub-deroulant {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-deroulant li {
+    padding: 0px 0;
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+    font-size: 20px;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    background:#000000;
+    border: 4px solid #FAD8A7;
+  }
+
+  .sub-deroulant a{
+    text-decoration: none;
+    color:#FFFFFF;
+    margin-left: 1px;
+    /* margin-bottom: 10px; */
+  }
+  .sub-deroulant li:hover {
+    color: #000000;
+  }
+  .deroulant > li:hover .sub-deroulant li {
+    transform: scale(1.3);
+  }
+  .deroulant > li:hover .sub-deroulant {
+    transform: scale(1.2);
+  }
+
+  li{
+   list-style: none;
+  }
+
+.parent-2
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ .header-2 
+ { 
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.logo-dofus 
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -55px;
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.bouton-ankama
+{ 
+    width: 175px;
+    height: 80px;
+    background: #E7A300;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.logo-ankama
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.bouton-wakfu 
+{ 
+    width: 175px;
+    height: 80px;
+    background: #40B2B5;;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.logo-wakfu
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.bar-recherche {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+    background:darkgray;
+    width: 820px;
+    height: 50px;
+    /* padding: 0.2rem 0.6rem 0.2rem 0.2rem;   */
+    box-sizing: border-box;
+    box-shadow: black 2px 2px 3px;
+  
+  }
+
+  .bar-recherche input {
+    border: 0;
+    height: 100%;
+    width: 85%;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+  }
+
+  .bar-recherche button {
+    background: none;
+    border: none;
+    color: rgb(8, 8, 8);
+    font-weight: bolder;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-mili
+  {
+    background-image: url(./images/donjons/mili_info.png);
+    background-size: cover;
+    height: 83vh;
+    display: flex;
+    margin-top: 285px;
+  }
+  .parent-11
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+}
+.img-bg-footer 
+{ 
+    background-image: url(./images/bg4_1.jpg);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-12
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-1
+{ 
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.reseau-sociaux-txt
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 4; 
+}
+.reseau-sociaux-txt p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.logo-reseau
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 6; 
+}
+.parent-13
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-2 
+{ 
+    display: flex;
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}

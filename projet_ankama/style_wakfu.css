@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body
+{
+    background-color: #FAD8A7;
+    margin: 0;
+    box-sizing:border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.sticky
+{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.backtotop {
+    width: 75px;
+    height: 129px;
+    background: url("images/backtotop-1-removebg.png") right no-repeat;
+    display: inline-block;
+    position: fixed;
+    margin-left: 10px;
+    margin-top:275px;
+}
+
+.backtotop:hover {
+    background: url("images/backtotop-hover-removebg.png") no-repeat;
+}
+.parent-1
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.header-1
+{ 
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    border-bottom: 7px solid #40B2B5;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-2
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ .header-2 
+ { 
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.logo-wakfu 
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.bouton-ankama
+{ 
+    width: 175px;
+    height: 80px;
+    background: #E7A300;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.logo-ankama
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.bouton-dofus 
+{ 
+    width: 175px;
+    height: 80px;
+    background: #44C95B;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.logo-dofus
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.parent-3 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.img-bg
+{ 
+    background-image: url(./images/bg2_1.jpg);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    border-bottom: 10px solid #40B2B5;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-4
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-titre-1
+{ 
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.fond-txt-img 
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    grid-area: 1 / 2 / 2 / 5; 
+}
+.img-tristepin
+{
+    margin-top: 18px;
+}
+.txt-1 
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 5; 
+}
+.txt-1 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.img-logo-wakfu
+{ 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.img-tristepin 
+{ 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.parent-5 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-txt-1
+{ 
+    grid-area: 1 / 1 / 6 / 6; 
+}
+.img-bg-1
+{ 
+    background-image: url(./images/bg5.jpg);
+    background-size: cover;
+    height: 139vh;
+    display: flex;
+    grid-area: 1 / 1 / 6 / 6; 
+}
+.img-txt-1
+{ 
+    background-image: url(./images/bg-text2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 105vh;
+    display: flex;
+    margin-top: -23px;
+    grid-area: 2 / 2 / 6 / 5; 
+}
+.txt-2
+{ 
+    grid-area: 2 / 2 / 6 / 5; 
+}
+.txt-2 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    display: flex;
+    text-align: center;
+    color: #54342B;
+    margin-top: 40px;
+}
+.parent-6 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-separateur 
+{ 
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.img-separateur 
+{ 
+    background-image: url(./images/separator.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    height: 33vh;
+    justify-content: center;
+    margin-top: -133px;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-7 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.conteneur
+{ 
+    grid-area: 1 / 1 / 7 / 4; 
+}
+.img-txt-2
+{ 
+    background-image: url(./images/bg-text2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 121vh;
+    display: flex;
+    margin-top: -75px;
+    /* margin-right: 10px; */
+    grid-area: 1 / 2 / 7 / 4; 
+}
+.txt-3 
+{ 
+    grid-area: 1 / 2 / 7 / 4; 
+}
+.txt-3 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    text-align: center;
+    margin-left: 19px;
+    color: #54342B;
+}
+.img-tv
+{ 
+    display: flex;
+    align-items: center;
+    transition: 1s ease;
+    justify-content: center;
+    grid-area: 1 / 1 / 3 / 2; 
+}
+.img-tv img
+{
+    border: 7px solid #40B2B5;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.img-tv:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.img-bd-1
+{ 
+    display: flex;
+    align-items: center;
+    transition: 1s ease;
+    justify-content: center;
+    grid-area: 3 / 1 / 5 / 2; 
+}
+.img-bd-1 img
+{
+    border: 7px solid #40B2B5;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.img-bd-1:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.img-bd-2
+{ 
+    display: flex;
+    align-items: center;
+    transition: 1s ease;
+    justify-content: center;
+    grid-area: 5 / 1 / 7 / 2; 
+}
+.img-bd-2 img
+{
+    border: 7px solid #40B2B5;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.img-bd-2:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.parent-8
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.img-bg-footer 
+{ 
+    background-image: url(./images/bg4_1.jpg);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    margin-top: 50px;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-10
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-1
+{ 
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.reseau-sociaux-txt
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 4; 
+}
+.reseau-sociaux-txt p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.logo-reseau
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 6; 
+}
+.parent-11
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-2 
+{ 
+    display: flex;
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}

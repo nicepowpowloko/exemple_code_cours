@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAD8A7;
+    margin: 0;
+    box-sizing:border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.backtotop {
+    width: 75px;
+    height: 129px;
+    background: url("images/backtotop-1-removebg.png") right no-repeat;
+    display: inline-block;
+    position: fixed;
+    margin-left: 10px;
+    margin-top:275px;
+}
+
+.backtotop:hover {
+    background: url("images/backtotop-hover-removebg.png") no-repeat;
+}
+.parent-1
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.header-1
+{ 
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    border-bottom: 7px solid #E7A300;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-2
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ .header-2 
+ { 
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.logo-ankama 
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 3 / 2 / 4; 
+}
+.bouton-dofus
+{ 
+    width: 175px;
+    height: 80px;
+    background: #44C95B;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.logo-dofus
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.bouton-wakfu 
+{ 
+    width: 175px;
+    height: 80px;
+    background: #40B2B5;;
+    border: 5px solid #54342B;
+    box-shadow: inset 50px 30px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 117px;
+    margin-top: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.logo-wakfu
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 1 / 4 / 2 / 5; 
+}
+.parent-3
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.img-bg
+{
+    background-image: url(./images/bg1_2.jpg);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    border-bottom: 10px solid #E7A300;
+    grid-area: 1 / 1 / 2 / 6;
+}
+.titre-bg
+{
+    grid-area: 1 / 2 / 2 / 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.titre-bg h1
+{
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+.parent-4
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-titre-1
+{ 
+    grid-area: 1 / 1 / 2 / 6; 
+}
+
+.fond-txt-img
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    grid-area: 1 / 2 / 2 / 5; 
+}
+.txt-1
+ { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 2 / 2 / 5; 
+}
+.txt-1 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.parent-5
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.txt-2
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.txt-2 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    color: #000000;
+}
+.trait-1
+{
+    border: 2px solid #000000;
+    width: 450px;
+    position: relative;
+}
+.parent-6
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-txt-1
+{ 
+    grid-area: 1 / 1 / 4 / 6; 
+}
+.txt-3 
+{ 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* margin-left: 70px; */
+    grid-area: 1 / 1 / 4 / 5; 
+}
+.txt-3 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    color: #000000;
+}
+.image-dofus-1
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s ease;
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.image-dofus-1 img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.image-dofus-1:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.image-wakfu-1
+{ 
+    display: flex;
+    align-items: center;
+    transition: 1s ease;
+    justify-content: space-between;
+    grid-area: 3 / 5 / 4 / 6; 
+}
+.image-wakfu-1 img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.image-wakfu-1:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.parent-7
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-txt-2
+{ 
+    grid-area: 1 / 1 / 4 / 6; 
+}
+.txt-4 
+{ 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* margin-right: 70px; */
+    grid-area: 1 / 2 / 4 / 6; 
+}
+.txt-4 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    color: #000000;   
+}
+.image-krosmater 
+{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-left: 100px;
+    transition: 1s ease;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.image-krosmater img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.image-krosmater:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.image-tactile-war
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+    margin-left: 100px;
+    grid-area: 3 / 1 / 4 / 2; 
+}
+.image-tactile-war img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.image-tactile-war:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.parent-8
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-txt-3
+{ 
+    grid-area: 1 / 1 / 4 / 6; 
+}
+.txt-5 
+{ 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* margin-left: 70px; */
+    grid-area: 1 / 1 / 4 / 5; 
+}
+.txt-5 p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    color: #000000;  
+    margin-bottom: 50px;
+}
+.image-dofus-2
+{ 
+    display: flex;
+    align-items: center;
+    transition: 1s ease;
+    justify-content: space-between;
+
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.image-dofus-2 img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+
+.image-dofus-2:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.image-abraca
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s ease;
+    margin-bottom: 50px;
+    grid-area: 3 / 5 / 4 / 6; 
+}
+.image-abraca img
+{
+    border: 7px solid #54342B;
+    box-shadow: 12px 12px 13px 1px black;
+}
+.image-abraca:hover
+{
+    transform:scale(1.50);
+    transition: 1s ease;
+}
+.parent-9
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.img-bg-footer 
+{ 
+    background-image: url(./images/bg4_1.jpg);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.parent-10
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-1
+{ 
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.reseau-sociaux-txt
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 4; 
+}
+.reseau-sociaux-txt p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.logo-reseau
+{ 
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 4 / 2 / 6; 
+}
+.parent-11 
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.bloc-footer-2 
+{ 
+    display: flex;
+    width: 100%;
+    height: 125px;
+    background-color: black;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: 1 / 1 / 2 / 6; 
+}
+.mention-légale p
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+
